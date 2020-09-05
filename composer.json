@@ -13,7 +13,11 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Core\\": "Core/"
+            "FastApi\\": "src/",
+            "App\\": "app/"
         }
+    },
+    "require-dev": {
+        "swoole/ide-helper": "@dev"
     }
 }

@@ -1,0 +1,18 @@
+#!/usr/bin/php
+<?php
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+$commads = require __DIR__ . '/src/Cli/commands.php';
+
+use FastApi\Cli\App;
+
+$app = new App;
+
+$app->registerCommands($commads);
+
+$app->runCommand($argv);
