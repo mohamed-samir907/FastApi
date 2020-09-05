@@ -8,8 +8,6 @@ use FastApi\Core\Servers\WebsocketServer;
 
 class App
 {
-    use Router;
-
     /**
      * Server host address.
      * 
